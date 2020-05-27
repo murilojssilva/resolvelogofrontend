@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9236fdc6.chunk.css",
+    "main.js": "/static/js/main.44b8db92.chunk.js",
+    "main.js.map": "/static/js/main.44b8db92.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3da2efd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3da2efd.js.map",
+    "static/js/2.52fccbc0.chunk.js": "/static/js/2.52fccbc0.chunk.js",
+    "static/js/2.52fccbc0.chunk.js.map": "/static/js/2.52fccbc0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7fe20729d5d956c792073d70cfb2b01a.js": "/precache-manifest.7fe20729d5d956c792073d70cfb2b01a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9236fdc6.chunk.css.map": "/static/css/main.9236fdc6.chunk.css.map",
+    "static/js/2.52fccbc0.chunk.js.LICENSE.txt": "/static/js/2.52fccbc0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/BarlowCondensed-Bold.cf45e631.ttf",
+    "static/media/comofazemos.jpg": "/static/media/comofazemos.1ba1b21b.jpg",
+    "static/media/oquefazemos.jpg": "/static/media/oquefazemos.dfa6befb.jpg",
+    "static/media/quemsomos.jpg": "/static/media/quemsomos.ebc8d6a4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3da2efd.js",
+    "static/js/2.52fccbc0.chunk.js",
+    "static/css/main.9236fdc6.chunk.css",
+    "static/js/main.44b8db92.chunk.js"
+  ]
+}

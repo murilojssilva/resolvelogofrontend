@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  height: 100px;
+}
+
+.footer-info {
+  display: unset;
+}
+
+.footer-info p,
+.footer-info a {
+  color: white;
+}
+
+.social-media {
+  align-self: center;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+}

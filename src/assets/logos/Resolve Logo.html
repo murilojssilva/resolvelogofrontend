@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost:3000/verifique-seu-caso -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/logo.jpg">
+    <script src="./Resolve Logo_files/jquery.min.js.download"></script>
+    <script src="./Resolve Logo_files/bootstrap.min.js.download"></script>
+
+    <script src="./Resolve Logo_files/react.min.js.download"></script>
+    <script src="./Resolve Logo_files/react-dom.min.js.download"></script>
+
+    <link href="./Resolve Logo_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Resolve Logo_files/font-awesome.min.css">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Resolve Logo</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">@font-face {
+  font-family: Barlow;
+  src: url(/static/media/BarlowCondensed-Bold.cf45e631.ttf);
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #03003f;
+}
+
+body {
+  background: #03003f;
+  color: #ffad1e;
+  font-family: Barlow, Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: -webkit-box;
+}
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+</style><style type="text/css">.homepage {
+  color: white;
+  display: table;
+}
+</style><style type="text/css">.header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  float: left;
+  width: 64px;
+  height: 64px;
+}
+.logo:hover {
+  width: 80px;
+  height: 80px;
+  transition: 1s;
+}
+</style><style type="text/css">.about {
+  width: 100%;
+  height: 500px;
+  max-width: 900px;
+}
+
+h1 {
+  text-align: -webkit-center;
+  position: relative;
+  padding: 10px;
+  color: whitesmoke;
+}
+
+h3 {
+  color: whitesmoke;
+  padding: 100px;
+  text-align: -webkit-center;
+}
+.verification {
+  border: 1px solid transparent;
+  display: table;
+  background-color: #ffad1e;
+  padding: 20px 40px;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.verification:hover {
+  background-color: #e6d942;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    height: 600px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .about {
+    height: 800px;
+    max-width: 1200px;
+  }
+}
+</style><style type="text/css">.infos {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  max-height: 500px;
+}
+
+.infos img {
+  width: 256px;
+  height: 256px;
+  cursor: pointer;
+}
+
+.infos img:hover {
+  width: 512px;
+  height: 512px;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .infos {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    max-height: 1200px;
+  }
+  .infos img:hover {
+    width: 256px;
+    height: 256px;
+  }
+  .infos img {
+    width: 128px;
+    height: 128px;
+  }
+}
+</style><style type="text/css">.footer {
+  width: 100%;
+  height: 100px;
+}
+
+.footer-info {
+  display: unset;
+}
+
+.footer-info p,
+.footer-info a {
+  color: white;
+}
+
+.social-media {
+  align-self: center;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+}
+</style><style type="text/css">.cases {
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  max-height: 300px;
+}
+
+.nav-pills > li > a {
+  color: white;
+}
+
+.nav-pills > li > a:hover {
+  background-color: #337ab7;
+}
+
+.cases-title {
+  text-align: center;
+  width: 100%;
+}
+
+.cases-list {
+  color: white;
+  max-width: 40px;
+  float: left;
+}
+
+.modal-title {
+  text-align: center;
+  color: black;
+}
+
+.modal-info {
+  color: black;
+  text-align: initial;
+}
+
+.modal-close {
+  border-radius: 50%;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cases-info {
+  color: white;
+  text-align: justify;
+  max-width: 1000px;
+  float: right;
+}
+
+li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .cases {
+    max-width: 1200px;
+  }
+}
+</style><style type="text/css"></style><style type="text/css">.case-verification {
+  width: 100%;
+  height: 100%;
+  max-height: 1200px;
+}
+
+.select-service {
+  color: white;
+}
+
+.selected-service:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.select-service:active {
+  color: #ffad1e;
+  cursor: pointer;
+  font-size: 120%;
+  text-decoration: none;
+}
+</style></head>
+  <body style="">
+    <noscript>Você precisa habilitar o Javascript para acessar o sistema.</noscript>
+    <div id="root"><div class="case-verification"><div class="header"><a href="http://localhost:3000/"><img src="data:image/jpeg;base64,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" alt="Resolve Logo" class="logo"></a></div><ul><li value="Água" class="selected-service">Água</li><li value="Luz" class="selected-service">Luz</li><li value="Negativação de nome" class="selected-service">Negativação de nome</li><li value="Telecomunicações" class="selected-service">Telecomunicações</li></ul><p></p><div class="contact"><h1>Envie sua solicitação</h1><form name="contact-form" method="post" action="http://localhost:3000/public/controllers/controllerForm.php" style="
+    display: inline-grid;
+    width: 100%;
+    padding: 80px;
+    margin: 0 auto;
+"><input type="text" name="name" id="name" placeholder="Nome:"><input type="tel" name="telefone" id="telefone" placeholder="Telefone:"><input type="email" name="email" id="email" placeholder="Email:"><textarea name="message" id="mensagem" placeholder="Mensagem:"></textarea><input type="submit" value="Enviar"></form></div><div class="footer"><div class="social-media"><a href="https://instagram.com/resolvelogo"><i _ngcontent-vji-c2="" class="fa fa-instagram fa-2x fa-fw"></i></a></div><div class="footer-info"><p>Copyright © 2020 - Resolve Logo, todos os direitos reservados. </p><p><a href="https://instagram.com/resolvelogo"><i _ngcontent-vji-c2="" class="fa fa-instagram fa-2x fa-fw"></i></a></p></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Resolve Logo_files/bundle.js.download"></script><script src="./Resolve Logo_files/1.chunk.js.download"></script><script src="./Resolve Logo_files/main.chunk.js.download"></script><script src="./Resolve Logo_files/main.208181a8876cef6110eb.hot-update.js.download"></script>
+
+<style>.Wu6tkjIyEh0aPi4jLbR { color:#2980b9 !important; } 
+.Wu6tkjIyEh0aPi4jLbR.ba-outline { outline-color:#2980b9 } 
+.Wu6tkjIyEh0aPi4jLbR.SuXj556c5w:hover, .Wu6tkjIyEh0aPi4jLbR.SuXj556c5w.active { color:#186ea3 !important; }
+.i9t2xU0hNMZVIsrV { background-color:#2980b9 !important; }
+.i9t2xU0hNMZVIsrV.SuXj556c5w:hover, .i9t2xU0hNMZVIsrV.SuXj556c5w.active { background:#186ea3 !important; }
+.ba-border-primary { border-color:#166a9e !important }
+.D5O5zjzcH9lF2k5 { background:#2980b9 !important; color:white !important; }
+.D5O5zjzcH9lF2k5.SuXj556c5w:hover, .D5O5zjzcH9lF2k5.SuXj556c5w.active { background:#1b72a8 !important; }
+.ba-color-secondary { color:#2980b9 !important;  }
+.ba-color-secondary.SuXj556c5w:hover, .ba-color-secondary.SuXj556c5w.active { color:#1b72a8 !important; }
+.ba-color-tertiary { color:#eb9f2d !important }
+.ba-color-tertiary.SuXj556c5w:hover, .ba-color-tertiary.SuXj556c5w.active { color:#db7f15 !important }
+.gL27LwFV82k { background:#eb9f2d !important }
+.ba-bg-tertiary.SuXj556c5w:hover, .ba-bg-tertiary.SuXj556c5w.active { background:#db7f15 !important }</style><div id="price-alert-wrapper"><link id="mz:css" rel="stylesheet" href="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/content-scripts/price-alert/loader.css"> <div id="mz:meliuz-reminder-price-alert" style="display:none"> <div class="mz-top-header"> <div class="mz-image-top-div"> <img class="mz-logo-header" src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/logo-full-meliuz-name.svg"> </div> <div id="price-alert-close-container" class="price-alert-close-container"> <img src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/alert-close-icon.svg" class="mz-new-reminder__close"> </div> <div class="mz-price-header-labels"> <div class="mz-too-expensive">Achou caro?</div> <div class="mz-informative-description">A gente te avisa por e-mail quando o preço&nbsp;baixar.</div> </div> </div> <div class="mz-mid-price-content"> <div class="mz-container-product"> <img id="price-alert-product-logo" class="price-alert-product-image"> <img id="price-alert-product-partner-logo" class="price-alert-product-partner-image"> </div> <div class="mz-product-name"> <div id="price-alert-product-name" class="price-alert-product-name"></div> </div> <div class="price-alert-info-row"> <div id="price-alert-left" class="price-alert-price-containers"> <div> <label id="mz-price-info" class="mz-price-info">Preço atual</label><br> <label id="price-alert-product-price"></label> </div> </div> <div id="price-alert-right" class="price-alert-price-containers"> <div> <label id="mz-price-cashback" class="mz-price-info">Ganhe</label><br> <label id="price-alert-product-cashback"></label> </div> </div> </div> <hr id="mz-divider" class="mz-divider"> </div> <div id="price-alert-footer" class="mz-price-alert-howmuch-section"> <div class="mz-price-alert-value-content"> <div id="mz-create-and-loading-status"> <div class="mz-price-reminder-alert-label"> <p class="mz-alert-price-label-pay">Quanto gostaria de pagar?</p> </div> <div class="mz-alert-form-inputs"> <input id="mz-price-input" class="mz-alert-input" placeholder="R$ " type="currency" name="" value=""> <button id="btn-create-alert" class="mz-alert-button mz-pointer" style="display:none"> Criar alerta </button> <button id="btn-create-alert-disabled" class="mz-alert-button mz-pointer" disabled="disabled"> <div class="mz-button-div"> <img id="mz-loading-img" class="mzrotate" src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/alert-loading-icon.png" style="display:none"> <p id="mz-button-disabled-text">Criar alerta</p> </div> </button> </div> <div id="mz-alert-form-error" class="mz-alert-form-error"> <div class="mz-warning-form-icon"> <img src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/alert-attention-circle.svg"> </div> <div id="mz-alert-input-error" class="mz-alert-input-error">O valor deve ser menor que o preço&nbsp;atual.</div> </div> </div> <div id="mz-created-status" style="display:none"> <div class="mz-create-alert-status-label"> <img id="mz-icon-success" src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/alert-check-circle.svg"> <div class="mz-success-title"> Alerta criado! </div> </div> <div class="mz-success-message"> Quando este produto chegar a R$ <span id="mz-success-target-price"></span>, você será avisado por e-mail. </div> </div> <div id="mz-failed-status" style="display:none"> <div class="mz-create-alert-status-label"> <img id="mz-icon-error" src="chrome-extension://jdcfmebflppkljibgpdlboifpcaalolg/images/alert-close-circle.svg"> <div id="mz-error-title" class="mz-error-title"> Não foi possível criar o alerta </div> </div> <div id="mz-try-again-container" class="mz-try-again-container"> <a id="mz-try-again"> Tentar novamente </a> </div> </div> </div> </div> </div></div></body><evlist></evlist></html>
